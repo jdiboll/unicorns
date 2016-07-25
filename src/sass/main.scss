@@ -4,16 +4,33 @@
 // @import 'normalize-css/normalize';
 // @import 'font-awesome/scss/font-awesome';
 
+ 
+html {
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	
+}
 .unicorn-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
+.uni1, .uni2, .uni3, .uni4 {
+	border: 2px solid #ccc;
+	margin:40px;
+	background-color: #f5f5f5;
+	box-shadow: 0 5px 5px -3px #11191d;
+
+}
+.uni1, .uni3 {
+	padding-bottom: 26px;
+}
 img {
 	max-width: 300px;
 	height: auto;
 	padding: 40px;
+	background-color: white;
 	border: 2px solid #ccc;
 	margin: 15px;
 	box-shadow: 0 5px 5px -3px #11191d;
@@ -22,8 +39,9 @@ img {
 h1 {
 	text-align: center;
 	text-shadow: 1px 1px 2px #666666;
+	margin: 0;
 }
-h4 {
+h3 {
 	text-align: center;
 	text-shadow: 1px 1px 2px #666666;
 }
@@ -32,7 +50,11 @@ select {
 	font-family: fantasy;
 	font-size: 25px;
 	border-radius: 10px;
-	background-color: #92c842;
+	background-color: #d6e6d6;
+	&:hover {
+		background-color: white;
+		transition: 0.5s all ease;
+	}
 }
 .selection {
 	display: flex;
