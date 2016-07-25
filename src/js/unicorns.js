@@ -2,7 +2,23 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 
 export default class Unicorns extends Component {
+
+	constructor () {
+		super ();
+		this.state = {
+			location: "Barn"
+		};
+	}
+
+
+
+    onChange(location){
+        this.setState({location: location.target.value});
+    };
+
+
 	render() {
+        let message = 'Location:' +this.state.location;
 		return (
 			<div className="content">
 				<h1>Unicorns</h1>
@@ -10,6 +26,16 @@ export default class Unicorns extends Component {
 					<div className="uni1">
 						<h4>George</h4>
 						<img src="http://www.scriptonitedaily.com/wp-content/uploads/2013/02/fm1.jpg" />
+						<div>
+							<div>
+         						<select defaultValue={this.state.selectValue} onChange={::this.onChange}>
+            					<option value="Barn">Barn</option>
+            					<option value="Pasture">Pasture</option>
+            					<option value="Stable">Stable</option>
+          						</select>
+          						<p>{message}</p>
+          					</div> 
+						</div>
 					</div>
 					<div className="uni2">
 						<h4>Paul</h4>
