@@ -10,15 +10,31 @@
 	justify-content: space-around;
 }
 
-
-
 img {
 	max-width: 300px;
 	height: auto;
 	padding: 40px;
-	
+	border: 2px solid #ccc;
+	margin: 15px;
+	box-shadow: 0 5px 5px -3px #11191d;
+	}
 
-}h1 {
+h1 {
 	text-align: center;
 	text-shadow: 1px 1px 2px #666666;
+}
+h4 {
+	text-align: center;
+	text-shadow: 1px 1px 2px #666666;
+}
+
+select {
+	font-family: fantasy;
+	font-size: 25px;
+	border-radius: 10px;
+	background-color: #92c842;
+}
+.selection {
+	display: flex;
+	justify-content: center;
 }
