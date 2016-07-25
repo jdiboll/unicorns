@@ -4,9 +4,9 @@ import { render } from 'react-dom';
 export default class Unicorns extends Component {
 	render() {
 		return (
-
-			<div className="unicorn-wrapper">
+			<div className="content">
 				<h1>Unicorns</h1>
+				<div className="unicorn-wrapper">
 					<div className="uni1">
 						<h4>George</h4>
 						<img src="http://www.scriptonitedaily.com/wp-content/uploads/2013/02/fm1.jpg" />
@@ -23,6 +23,7 @@ export default class Unicorns extends Component {
 						<h4>Ringo</h4>
 						<img src="https://s-media-cache-ak0.pinimg.com/736x/80/e0/61/80e06175e70fdb05c585a2f49d5f1db1.jpg" />
 					</div>
+				</div>
 			</div>
 
 
